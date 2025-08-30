@@ -165,7 +165,7 @@ const Contact = () => {
                   </h2>
                   <div className="flex space-x-4">
                     <a 
-                      href="#" 
+                      href="https://www.facebook.com/profile.php?id=61574082840918" 
                       className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200"
                       data-testid="link-facebook"
                     >
@@ -174,7 +174,7 @@ const Contact = () => {
                       </svg>
                     </a>
                     <a 
-                      href="#" 
+                      href="https://www.instagram.com/neirin_33?igsh=ODIwNmN6cWNmbHV5" 
                       className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200"
                       data-testid="link-instagram"
                     >
@@ -185,7 +185,7 @@ const Contact = () => {
                       </svg>
                     </a>
                     <a 
-                      href="#" 
+                      href="https://www.tiktok.com/@neirin.liplush?_t=ZS-8zJbQKZ7R4r&_r=1" 
                       className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200"
                       data-testid="link-tiktok"
                     >
