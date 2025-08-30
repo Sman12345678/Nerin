@@ -8,7 +8,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-serif font-bold gradient-text mb-6" data-testid="about-title">
-              About Nerin Liplush
+              About Neirin Liplush
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Born from a passion for beauty and a commitment to quality, Nerin Liplush represents the perfect fusion of elegance, innovation, and accessibility. Our journey began with a simple yet powerful vision: to create premium lip beauty products that not only enhance your natural beauty but also empower confidence and celebrate the unique elegance in every woman.
@@ -21,7 +21,7 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-foreground leading-relaxed" data-testid="mission-text-1">
-                At Nerin Liplush, we believe that beauty is not just about looking good—it's about feeling confident, empowered, and expressing your unique personality. Our carefully crafted lipsticks and lip glosses are designed to enhance your natural beauty while providing long-lasting comfort and stunning results that make you feel unstoppable.
+                At Neirin Liplush, we believe that beauty is not just about looking good—it's about feeling confident, empowered, and expressing your unique personality. Our carefully crafted lipsticks and lip glosses are designed to enhance your natural beauty while providing long-lasting comfort and stunning results that make you feel unstoppable.
               </p>
               <p className="text-foreground leading-relaxed" data-testid="mission-text-2">
                 Every product in our collection is formulated with premium ingredients sourced globally and crafted locally with Nigerian beauty needs in mind. We understand the diverse beauty landscape of Nigeria and create products that celebrate every skin tone. From the boardroom to the dance floor, from quiet mornings to glamorous evenings, we have something for every mood, occasion, and beautiful Nigerian woman.
@@ -52,7 +52,7 @@ const About = () => {
                     "Beauty is about feeling confident in your own skin and celebrating what makes you uniquely you. At Nerin Liplush, we're here to enhance that confidence with products that make you feel as beautiful as you truly are. Every shade we create, every formula we perfect, is designed with the Nigerian woman in mind—because you deserve nothing less than excellence."
                   </p>
                   <p className="text-primary font-semibold mt-4" data-testid="ceo-name">
-                    - Sarah Nerin, Founder & CEO
+                    - MOYINOLUWA, Founder & CEO
                   </p>
                   <p className="text-sm text-muted-foreground mt-2" data-testid="ceo-credentials">
                     Former L'Oréal Beauty Consultant • MBA in Business Administration
