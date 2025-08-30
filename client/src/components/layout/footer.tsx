@@ -19,21 +19,21 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/profile.php?id=61574082840918" 
                 className="text-primary-foreground/80 hover:text-white transition-colors"
                 data-testid="footer-facebook"
               >
                 Facebook
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/neirin_33?igsh=ODIwNmN6cWNmbHV5" 
                 className="text-primary-foreground/80 hover:text-white transition-colors"
                 data-testid="footer-instagram"
               >
                 Instagram
               </a>
               <a 
-                href="#" 
+                href="https://www.tiktok.com/@neirin.liplush?_t=ZS-8zJbQKZ7R4r&_r=1" 
                 className="text-primary-foreground/80 hover:text-white transition-colors"
                 data-testid="footer-tiktok"
               >
@@ -64,32 +64,6 @@ const Footer = () => {
                 <Link href="/contact" className="hover:text-white transition-colors" data-testid="footer-contact">
                   Contact
                 </Link>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Customer Care</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
-              <li>
-                <a href="#" className="hover:text-white transition-colors" data-testid="footer-shipping">
-                  Shipping Info
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors" data-testid="footer-returns">
-                  Returns
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors" data-testid="footer-faq">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors" data-testid="footer-support">
-                  Support
-                </a>
               </li>
             </ul>
           </div>
