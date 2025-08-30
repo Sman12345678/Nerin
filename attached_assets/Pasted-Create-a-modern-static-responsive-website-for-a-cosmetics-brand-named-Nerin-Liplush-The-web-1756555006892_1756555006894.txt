@@ -1,0 +1,87 @@
+Create a modern, static, responsive website for a cosmetics brand named **Nerin Liplush**.  
+The website should focus on lipstick and lip gloss products.  
+
+Key details:  
+- Brand name: Nerin Liplush  
+- Business type: Lipstick & lip gloss seller  
+- Theme colors: Pink and White  
+- Style: Elegant, feminine, attractive  
+- Animations: Floral-themed animations throughout the site  
+- Optimized for both desktop and mobile  
+
+Website sections:  
+1. **Home Page**  
+   - Hero banner with brand logo, brand name, and slogan  
+   - Floral animations in background  
+   - Featured product highlight  
+
+2. **Products Page**  
+   - Products displayed as cards with image, name, price, description, and **Buy Now button**  
+   - Each "Buy Now" button links to WhatsApp using:  
+     `https://wa.me/${WHATSAPP_NUMBER}?text=I+want+to+buy+this+{Product Name}`  
+   - The **WhatsApp number should be stored in `.env`** as `WHATSAPP_NUMBER`.  
+   - Products should load dynamically from a JSON file for easy updates.  
+
+   Products list:  
+   1. **Raspberry, Sugar Plum & Cherry Bloom Splash Lipgloss Set** — ₦2500 each — Fruity-inspired lipgloss collection with bold, sweet shades. — https://im.ge/i/1000020924.nXQuKL  
+   2. **Glimmer Clear Lipgloss** — ₦2500 — A shiny clear lipgloss that adds a subtle sparkle. — https://im.ge/i/1000020992.nXQI6F  
+   3. **Chocolate Lipgloss** — ₦2500 — Rich chocolate shade lipgloss with smooth finish. — https://im.ge/i/1000020990.nXQLKK  
+   4. **Hot Chocolate + Clear Lipgloss Combo** — ₦5000 — Duo combining hot chocolate shade and clear gloss. — https://im.ge/i/1000020902.nXQhl9  
+   5. **Pinkish, Choco & Nude with Clear Shades** — ₦2500 each — Versatile set of pink, chocolate, nude, and clear lipglosses. — https://im.ge/i/1000020994.nXQi0X  
+   6. **Lip Scrub Set** — ₦1500 each — Exfoliating lip scrub for smooth lips. — https://im.ge/i/1000020929.nXQ0c8  
+   7. **Lip Moisturizer Set** — ₦1500 each — Hydrating moisturizer for soft, nourished lips. — https://im.ge/i/1000020929.nXQ0c8  
+   8. **Splash, Shimmer Red, Nude & Clear Lipgloss Collection** — ₦2500 each — Glossy shades for every occasion. — https://im.ge/i/1000020941.nXQC0P  
+   9. **Lip Liner Set (Brown & Chocolate)** — ₦1000 each — Smooth, blendable lip liners. — https://im.ge/i/1000020998.nXQcvW  
+   10. **Scrub Brush** — ₦1000 each — Handy brush for lip exfoliation. — https://im.ge/i/1000020944.nXQ8S0  
+
+3. **About Us Page**  
+   - Story of Nerin Liplush as a beauty brand  
+   - Mission: Empower confidence and elegance through lip beauty products  
+   - Include a **CEO Image in a circular frame** with a short note/message from the CEO.  
+   - The CEO image should be pulled from `.env` variable `CEO_IMAGE_URL`.  
+
+4. **Contact Page**  
+   - Simple contact form (Name, Email, Message)  
+   - WhatsApp button for direct chat  
+   - Placeholder social links: Facebook, Instagram, TikTok  
+   - Floating WhatsApp chat button visible on all pages  
+
+5. **Testimonials / Reviews Section**  
+   - Display 3–5 customer testimonials with name and rating  
+
+6. **FAQ Section**  
+   - Example:  
+     - Do you deliver nationwide?  
+     - How long does delivery take?  
+     - Are products cruelty-free?  
+
+7. **Navigation & Footer**  
+   - Navbar: Home | Products | About | Contact  
+   - Footer: Copyright © Nerin Liplush, quick links, social icons  
+
+8. **Secret Admin Route (admin.html)**  
+   - Hidden page (not in navbar)  
+   - Simple password check before access  
+   - Show **admin profile image** at top (pulled from `.env` variable `ADMIN_IMAGE_URL`).  
+   - Form to add new products:  
+     - Product Name  
+     - Price  
+     - Description  
+     - Image upload field  
+   - Image uploads sent to **Im.ge API** (API key stored in `.env` as `IMGE_API_KEY`)  
+   - After submission, products saved into JSON file and displayed dynamically on Products page  
+
+Other technical notes:  
+- Products and site data should be JSON-driven for easy updates  
+- Add basic SEO meta tags (title, description, keywords)  
+- Include brand logo + favicon  
+- Add smooth floral page-load animations  
+- Newsletter subscription form (optional, link to Mailchimp or placeholder action)  
+- Dark mode toggle (optional but nice-to-have)  
+- Instagram feed embed (optional, placeholder if no API)  
+
+Final requirements:  
+- Static site only (HTML, CSS, JS)  
+- Clean, elegant, mobile-friendly design  
+- Use pink & white theme consistently with floral elements  
+- WhatsApp number, CEO image URL, and Admin image URL must come from `.env` file
