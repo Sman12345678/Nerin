@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -62,20 +63,28 @@ const Admin = () => {
   };
 
   const uploadToImgE = async (file: File): Promise<string> => {
-    // In a real implementation, this would upload to Im.ge API
-    // For now, we'll simulate the upload and return a placeholder URL
     const formData = new FormData();
     formData.append('image', file);
     formData.append('key', ENV.IMGE_API_KEY);
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Return a simulated URL (in real implementation, this would be the actual Im.ge response)
-      return `https://im.ge/i/${Date.now()}.${file.name.split('.').pop()}`;
+      const response = await fetch('https://api.imgur.com/3/image', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Client-ID ${ENV.IMGE_API_KEY}`,
+        },
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to upload image');
+      }
+
+      const data = await response.json();
+      return data.data.link;
     } catch (error) {
-      throw new Error('Failed to upload image to Im.ge');
+      console.error('Image upload error:', error);
+      throw new Error('Failed to upload image to Imgur');
     }
   };
 
@@ -94,9 +103,8 @@ const Admin = () => {
         imageUrl = await uploadToImgE(newProduct.image);
       }
 
-      // In a real app, you would save this to your backend/JSON file
+      // Prepare product data
       const productData = {
-        id: Date.now(),
         name: newProduct.name,
         price: parseInt(newProduct.price),
         description: newProduct.description,
@@ -104,7 +112,21 @@ const Admin = () => {
         image: imageUrl || "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
       };
 
-      console.log("New product would be saved:", productData);
+      // Make API call to add product
+      const response = await fetch('/api/products', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(productData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to add product');
+      }
+
+      const result = await response.json();
 
       toast({
         title: "Product Added!",
@@ -120,10 +142,17 @@ const Admin = () => {
         image: null
       });
 
+      // Reset file input
+      const fileInput = document.getElementById('image') as HTMLInputElement;
+      if (fileInput) {
+        fileInput.value = '';
+      }
+
     } catch (error) {
+      console.error('Error adding product:', error);
       toast({
         title: "Error",
-        description: "Failed to add product. Please try again.",
+        description: error instanceof Error ? error.message : "Failed to add product. Please try again.",
         variant: "destructive",
       });
     } finally {
