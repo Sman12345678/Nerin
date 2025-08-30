@@ -28,7 +28,7 @@ const Hero = ({ featuredProduct }: HeroProps) => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-serif font-bold gradient-text mb-6" data-testid="hero-title">
-          Nerin Liplush
+          Neirin Liplush
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground font-script mb-8" data-testid="hero-slogan">
           "Where Beauty Meets Elegance"
