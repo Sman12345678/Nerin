@@ -65,6 +65,11 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/admin" className="hover:text-white transition-colors" data-testid="footer-home">
+                  ♥️
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
