@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Do you deliver nationwide?",
+    "answer": "Yes! We deliver to all 36 states and the FCT across Nigeria. Standard delivery takes 2-5 business days for most locations. Express delivery (1-2 days) is available in Lagos, Abuja, Port Harcourt, Kano, and Ibadan. We also offer same-day delivery within Lagos Island and Victoria Island for orders placed before 2 PM."
+  },
+  {
+    "id": 2,
+    "question": "How much does delivery cost?",
+    "answer": "Delivery is FREE for orders above ₦5,000. For smaller orders: Lagos/Abuja - ₦1,500, other major cities - ₦2,000, remote areas - ₦2,500. Express delivery costs an additional ₦1,000. Same-day delivery in Lagos is ₦3,000."
+  },
+  {
+    "id": 3,
+    "question": "Are your products cruelty-free and halal?",
+    "answer": "Absolutely! All Nerin Liplush products are 100% cruelty-free, halal-certified, and made with ethically sourced ingredients. We never test on animals and our manufacturing partners share our commitment to ethical beauty practices."
+  },
+  {
+    "id": 4,
+    "question": "What's your return and exchange policy?",
+    "answer": "We offer a 14-day return policy for unopened products in original packaging. For defective items, we provide full refunds or exchanges within 30 days. If you're unsure about a shade, contact us within 7 days for a one-time exchange. Return shipping is free for defective products."
+  },
+  {
+    "id": 5,
+    "question": "How do I choose the right shade for my skin tone?",
+    "answer": "We offer personalized shade matching! Send us a photo via WhatsApp for professional recommendations. Generally: Fair skin - opt for light pinks and corals; Medium skin - try berries and mauves; Deep skin - go for rich chocolates and bold reds. Our clear glosses work beautifully on all skin tones."
+  },
+  {
+    "id": 6,
+    "question": "Are the ingredients safe for sensitive lips?",
+    "answer": "Yes! Our products are formulated with gentle, nourishing ingredients including vitamin E, jojoba oil, and shea butter. They're free from parabens, sulfates, and harsh chemicals. All ingredients are listed on product pages. If you have specific allergies, please check ingredients before ordering."
+  },
+  {
+    "id": 7,
+    "question": "How long do the lip products last?",
+    "answer": "Our lip glosses have a 24-month shelf life unopened and 12 months once opened. Lip liners last up to 36 months unopened and 18 months opened. For best results, store in a cool, dry place away from direct sunlight. Look for any changes in texture, smell, or color as signs to replace."
+  },
+  {
+    "id": 8,
+    "question": "How do I place an order via WhatsApp?",
+    "answer": "Simply click any 'Buy Now' button or the floating WhatsApp icon. Send us the product name and your delivery address. We'll confirm availability, calculate total cost including delivery, and guide you through payment options (bank transfer, card payment, or cash on delivery in select areas)."
+  },
+  {
+    "id": 9,
+    "question": "Do you offer bulk discounts for makeup artists?",
+    "answer": "Yes! We offer professional discounts for certified makeup artists and beauty businesses. Contact us with your certification for 15-25% discounts on bulk orders (minimum 10 pieces). We also have a referral program - refer 5 customers and get 20% off your next order."
+  },
+  {
+    "id": 10,
+    "question": "What payment methods do you accept?",
+    "answer": "We accept bank transfers to our GTBank, Access Bank, and UBA accounts. Card payments through Paystack are available for online orders. Cash on delivery is available in Lagos, Abuja, and Port Harcourt for orders above ₦3,000. Payment must be completed before shipment for first-time customers."
+  },
+  {
+    "id": 11,
+    "question": "How should I apply lip gloss for best results?",
+    "answer": "For best results: 1) Exfoliate lips with our lip scrub, 2) Apply lip moisturizer and let it absorb, 3) Use lip liner for definition (optional), 4) Apply gloss from center outward using the applicator or your finger. Reapply as needed throughout the day."
+  },
+  {
+    "id": 12,
+    "question": "Can I track my order?",
+    "answer": "Yes! Once your order ships, we'll send you tracking information via WhatsApp. You can track your package through our delivery partners. We'll also send updates when your order is out for delivery and delivered. Feel free to message us anytime for order status updates."
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Amara Johnson",
+    "location": "Lagos",
+    "review": "I'm a makeup artist and I've tried countless lip products, but Nerin Liplush is something special! The Raspberry Sugar Plum set has become my go-to for bridal makeup. The formula is incredibly smooth, doesn't feather, and lasts through tears of joy. My brides always ask where they can get these colors. The pigmentation is perfect - not too sheer, not too opaque. Highly recommend to both professionals and everyday users!",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    "verified": true,
+    "product": "Raspberry, Sugar Plum & Cherry Bloom Splash Lipgloss Set"
+  },
+  {
+    "id": 2,
+    "name": "Chioma Adebayo",
+    "location": "Abuja",
+    "review": "As someone with naturally dry lips, I was skeptical about lip glosses, but the chocolate shade changed everything! It's so nourishing - I can wear it all day without reapplication and my lips actually feel moisturized. The color is perfect for my medium skin tone and works for both office meetings and dinner dates. I've already ordered 3 more shades. Customer service via WhatsApp was also fantastic - they helped me pick the perfect colors!",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    "verified": true,
+    "product": "Chocolate Lipgloss"
+  },
+  {
+    "id": 3,
+    "name": "Fatima Ibrahim",
+    "location": "Kano",
+    "review": "The lip care routine with the scrub and moisturizer completely transformed my lips! I used to have chronically chapped lips, especially during harmattan season. After just one week of using the lip scrub twice weekly and the moisturizer daily, my lips are baby soft. Now I can wear any lip color beautifully. The packaging is also so elegant - feels like a luxury product but at an affordable price. Delivery to Kano was surprisingly fast too!",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    "verified": true,
+    "product": "Lip Scrub Set & Lip Moisturizer Set"
+  },
+  {
+    "id": 4,
+    "name": "Grace Okonkwo",
+    "location": "Port Harcourt",
+    "review": "I'm obsessed with the clear lipgloss! It's become my everyday essential. Unlike other clear glosses that are sticky or too thick, this one is perfectly balanced. It gives just the right amount of shine and makes my natural lip color pop. I love that it's not tested on animals too - that's very important to me. The lip liner in brown is also perfect for defining my lips before applying gloss. Quality products with a conscience!",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    "verified": true,
+    "product": "Glimmer Clear Lipgloss & Lip Liner Set"
+  },
+  {
+    "id": 5,
+    "name": "Kemi Adeleke",
+    "location": "Ibadan",
+    "review": "Exceptional customer service and beautiful products! I initially ordered the nude shades but wasn't sure about the color match. The team was so helpful via WhatsApp - they even offered to exchange if I wasn't happy. Turns out the shade was perfect! The formula is long-wearing but not drying, and the color payoff is exactly what I wanted. Free delivery was a nice bonus. I've since recommended Nerin Liplush to all my friends!",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    "verified": true,
+    "product": "Pinkish, Choco & Nude with Clear Shades"
+  },
+  {
+    "id": 6,
+    "name": "Blessing Ogbonna",
+    "location": "Enugu",
+    "review": "I bought the Hot Chocolate + Clear combo for my birthday and I'm so glad I did! The hot chocolate shade is rich and luxurious - perfect for special occasions. The clear gloss is perfect for everyday wear or layering over the colored gloss for extra shine. Both formulas are so comfortable to wear and don't transfer onto cups. The packaging came beautifully wrapped too. This brand really pays attention to details!",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1543349689-b5c55f5b8bb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    "verified": true,
+    "product": "Hot Chocolate + Clear Lipgloss Combo"
+  },
+  {
+    "id": 7,
+    "name": "Aisha Musa",
+    "location": "Kaduna",
+    "review": "As a hijabi, I focus a lot on lip makeup since it's one of the main features visible. The Splash collection gives me so many options! The shimmer red is perfect for special events, while the nude is great for everyday. All shades are halal-certified which is very important to me. The formula doesn't dry out my lips during long wear, and the colors are true to what's shown online. Excellent quality at reasonable prices!",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    "verified": true,
+    "product": "Splash, Shimmer Red, Nude & Clear Lipgloss Collection"
+  }
+]
