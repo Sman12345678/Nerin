@@ -30,7 +30,7 @@ const Admin = () => {
   const { toast } = useToast();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // 🔑 Simple authentication with hardcoded password
+  // 🔑 Authentication (hardcoded "nerin")
   const handleAuthentication = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === "nerin") {
@@ -66,27 +66,27 @@ const Admin = () => {
     }));
   };
 
-  // 📸 Upload image using API key
-  const uploadToImgE = async (file: File): Promise<string> => {
+  // 📸 Upload image to im.ge
+  const uploadToImge = async (file: File): Promise<string> => {
     const formData = new FormData();
     formData.append("image", file);
-    formData.append("key", ENV.IMGE_API_KEY); // 🔥 keep your API key as you said
+    formData.append("key", ENV.IMGE_API_KEY);
 
     try {
-      const response = await fetch("https://api.imgbb.com/1/upload", {
+      const response = await fetch("https://api.im.ge/1/upload", {
         method: "POST",
         body: formData,
       });
 
       if (!response.ok) {
-        throw new Error("Failed to upload image");
+        throw new Error("IMGE_ERROR: Failed to upload image");
       }
 
       const data = await response.json();
       return data.data.url;
     } catch (error) {
       console.error("Image upload error:", error);
-      throw new Error("Failed to upload image");
+      throw new Error("IMGE_ERROR: Unable to upload image to im.ge");
     }
   };
 
@@ -103,7 +103,7 @@ const Admin = () => {
           title: "Uploading image...",
           description: "Please wait while we upload your image.",
         });
-        imageUrl = await uploadToImgE(newProduct.image);
+        imageUrl = await uploadToImge(newProduct.image);
       }
 
       const productData = {
@@ -124,7 +124,7 @@ const Admin = () => {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || "Failed to add product");
+        throw new Error("APP_ERROR: " + (errorData.error || "Failed to add product"));
       }
 
       await response.json();
@@ -148,12 +148,25 @@ const Admin = () => {
       }
     } catch (error) {
       console.error("Error adding product:", error);
+
+      let errorTitle = "Error";
+      let errorMessage = "Something went wrong. Please try again.";
+
+      if (error instanceof Error) {
+        if (error.message.startsWith("IMGE_ERROR")) {
+          errorTitle = "Image Upload Error";
+          errorMessage = "Image upload failed. Please check your file or try again.";
+        } else if (error.message.startsWith("APP_ERROR")) {
+          errorTitle = "App Error";
+          errorMessage = "Failed to save product to the app. Please retry later.";
+        } else {
+          errorMessage = error.message;
+        }
+      }
+
       toast({
-        title: "Error",
-        description:
-          error instanceof Error
-            ? error.message
-            : "Failed to add product. Please try again.",
+        title: errorTitle,
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
