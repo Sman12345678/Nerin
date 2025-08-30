@@ -30,7 +30,7 @@ const Admin = () => {
 
   const handleAuthentication = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === "nerinliplush2024") {
+    if (password === "nerin") {
       setIsAuthenticated(true);
       toast({
         title: "Welcome!",
