@@ -92,38 +92,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-      res.json({ success: true, message: "Successfully subscribed to newsletter" });
-    } catch (error) {
-      res.status(500).json({ error: "Failed to subscribe to newsletter" });
-    }
-  });
-
-  // SPA fallback - serve index.html for all non-API routes
-  // This must be the last route
-  app.get("*", (req, res) => {
-    // Skip API routes
-    if (req.path.startsWith("/api/")) {
-      return res.status(404).json({ error: "API endpoint not found" });
-    }
-
-    if (process.env.NODE_ENV === "production") {
-      res.sendFile(path.join(process.cwd(), "dist/public", "index.html"));
-    } else {
-      // In development, Vite middleware handles this, but we still need a fallback for direct URL access
-      // In development, Vite middleware will typically handle serving index.html for SPA routes.
-      // If we reach here in development, it means Vite didn't catch it, which might be an issue with Vite config or the route itself.
-      // For simplicity and to avoid conflicts with Vite, we'll let Vite handle it and assume it will serve index.html if configured correctly.
-      // If Vite doesn't serve it, a 404 from the server might occur, which is not ideal for SPAs.
-      // A more robust development setup might involve explicitly telling Vite to serve index.html for all routes if it doesn't.
-      // For now, we'll trust Vite's handling or let the client-side router take over after index.html is served.
-      // If this route is hit in dev, it means the client-side router should ideally handle it.
-      // The Vite middleware should handle serving the index.html in dev for SPA routes.
-      // If this is hit directly, it's likely an unhandled route by the client-side router.
-      // For a pure SPA, the index.html should always be served, and the client-side router takes over.
-      // This fallback is primarily for production build.
-      res.status(404).send("Route not found. If this is a SPA route, check your client-side routing and server configuration.");
-    }
-  });
+      
 
   // SPA fallback - serve index.html for all non-API routes
   // This must be the last route
