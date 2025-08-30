@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                 <span className="text-primary font-bold text-lg">NL</span>
               </div>
-              <span className="text-2xl font-serif font-bold">Nerin Liplush</span>
+              <span className="text-2xl font-serif font-bold">Neirin Liplush</span>
             </div>
             <p className="text-primary-foreground/80 mb-4 max-w-md">
               Empowering confidence and elegance through premium lip beauty products. Discover your perfect shade with Nerin Liplush.
@@ -72,7 +72,7 @@ const Footer = () => {
         <hr className="border-primary-foreground/20 my-8" />
         <div className="text-center text-primary-foreground/80">
           <p data-testid="copyright">
-            &copy; {currentYear} Nerin Liplush. All rights reserved.
+            &copy; {currentYear} Neirin Liplush. All rights reserved.
           </p>
         </div>
       </div>
